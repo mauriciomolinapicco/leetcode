@@ -17,10 +17,12 @@ class Solution(object):
 
             #nuevo digito
             valor = v1 + v2 + carry
-            if valor > 9:
+
+            if valor > 9:  #Todo esto es lo mismo que hacer carry = valor // 10
                 carry = 1
             else:
                 carry = 0
+                
             valor %= 10 
             node.next = ListNode(valor)
             node = node.next
