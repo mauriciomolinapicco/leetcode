@@ -1,0 +1,57 @@
+{
+    "vendedores": [
+        {
+            "id":1,
+            "nombre":"Mauricio",
+            "apellido":"Molina",
+            "edad":21,
+            "email":"mauricio@gmail.com",
+            "telefono":12345678,
+            "fechaContratacion":"13-03-2013",
+            "activo":true
+        },
+        {
+            "id":2,
+            "nombre":"Lionel",
+            "apellido":"Messi",
+            "edad":37,
+            "email":"messi@gmail.com",
+            "telefono":10101010,
+            "fechaContratacion":"10-10-2010",
+            "activo":true
+        }
+    ],
+    "locales": [
+        {
+            "id":1,
+            "nombre":"local1",
+            "direccion":{
+                "calle":"Tucuman",
+                "altura":3456,
+                "ciudad":"Cordoba",
+                "provincia":"Cordoba",
+                "horario":{
+                    "abre":"08:00",
+                    "cierra":"20:00"
+                }
+            }
+        }
+    ],
+    "insumos": [
+        {
+            "id":1,
+            "nombre":"insumo 1",
+            "descripcion": "descripcion del insumo 1",
+            "stockActual": 100,
+            "unidadMedida":"kg",
+            "proveedor":"proveedor 1"            
+        }
+    ],
+    "preciosInsumos":[
+        {
+            "insumoId":1,
+            "fechaValidez":"31-12-2024",
+            "precio":1000
+        }
+    ]
+}
