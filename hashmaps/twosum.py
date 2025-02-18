@@ -16,3 +16,12 @@ class Solution(object):
             deseado = target - num
             if deseado in h and h[deseado] != i:
                 return i, h[deseado]
+
+
+    def twoSum(self, nums, target): 
+        hash = {}
+        for i,n in enumerate(nums):
+            diff = target - nums[i]
+            if diff in hash:
+                return [hash[diff], i]
+            hash[n] = i
