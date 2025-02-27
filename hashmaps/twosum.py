@@ -19,9 +19,11 @@ class Solution(object):
 
 
     def twoSum(self, nums, target): 
-        hash = {}
-        for i,n in enumerate(nums):
-            diff = target - nums[i]
-            if diff in hash:
-                return [hash[diff], i]
-            hash[n] = i
+        # en el hashmap almaceno el valor necesario para que la suma de el target y el indice del valor con el que da el resultado
+        mapa = {}
+        for i, n in enumerate(nums):
+            if n in mapa:
+                return [mapa[n], i]
+            val = target - n
+            mapa[val] = i
+        return []
